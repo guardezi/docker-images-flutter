@@ -1,11 +1,12 @@
 FROM cirrusci/android-sdk:30
-
+# FROM node:slim
 USER root
 
-ARG flutter_version
+RUN curl -sL https://firebase.tools | bash
+
 
 ENV FLUTTER_HOME=${HOME}/sdks/flutter \
-    FLUTTER_VERSION=$flutter_version
+    FLUTTER_VERSION=stable
 ENV FLUTTER_ROOT=$FLUTTER_HOME
 
 ENV PATH ${PATH}:${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin
