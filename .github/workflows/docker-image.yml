@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build --tag guardezi/flutter-firebase:$(date +%s) sdk
+      run: docker build --tag guardezi/flutter-firebase:latest --tag guardezi/flutter-firebase:$(date +%s) sdk
+    - name: Push Docker Image
+      run: docker push guardezi/flutter-firebase:latest
