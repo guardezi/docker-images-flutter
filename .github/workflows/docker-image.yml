@@ -25,8 +25,7 @@ jobs:
       run: docker build --tag guardezi/flutter-firebase:latest --tag guardezi/flutter-firebase:${{github.run_number}} sdk
     
     - name: Push Docker Image
-      run: docker push guardezi/flutter-firebase:latest
-    
-    - name: Push Docker Image
       run: docker push guardezi/flutter-firebase:${{github.run_number}}
 
+    - name: Push Docker Image
+      run: docker push guardezi/flutter-firebase:latest
