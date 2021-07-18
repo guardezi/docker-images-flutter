@@ -1,8 +1,6 @@
 # Docker Images for [Flutter](https://flutter.dev/) 
 
-[![Build Status](https://api.cirrus-ci.com/github/cirruslabs/docker-images-flutter.svg)](https://cirrus-ci.com/github/cirruslabs/docker-images-flutter)
-
-[![Actions](https://github.com/guardezi/docker-images-flutter/actions/workflows/docker-image.yml/badge.svg)]
+![Actions](https://github.com/guardezi/docker-images-flutter/actions/workflows/docker-image.yml/badge.svg)
 
 
 You can either [use it in CI](https://cirrus-ci.org/examples/#flutter) or run locally via Docker:
