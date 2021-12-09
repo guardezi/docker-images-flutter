@@ -1,4 +1,4 @@
-# Docker Images for [Flutter](https://flutter.dev/) 
+# Docker Images for [Flutter](https://flutter.dev/) 2.8
 
 ![Actions](https://github.com/guardezi/docker-images-flutter/actions/workflows/docker-image.yml/badge.svg)
 
