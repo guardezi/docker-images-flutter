@@ -45,7 +45,7 @@ RUN /opt/google-cloud-sdk/install.sh --quiet
 ENV PATH ${PATH}:/opt/google-cloud-sdk/bin
 
 #installing sonar scanner
-RUN RUN curl -O https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472.zip
+RUN curl -O https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472.zip
 RUN unzip sonar-scanner-cli-4.6.2.2472.zip -d /opt
 
 ENV PATH ${PATH}:/opt/sonar-scanner-4.6.2.2472/bin
