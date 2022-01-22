@@ -30,7 +30,9 @@ RUN apt-get update -qqy && apt-get install -qqy \
         lsb-release \
         openssh-client \
         git \
-        gnupg 
+        gnupg \
+        openjdk-11-jdk \
+        unzip
 RUN pip3 install -U crcmod
 
 RUN curl -sL https://firebase.tools | bash
@@ -41,3 +43,10 @@ RUN tar -xvf google-cloud-sdk-340.0.0-linux-x86_64.tar.gz -C /opt
 RUN /opt/google-cloud-sdk/install.sh --quiet
 
 ENV PATH ${PATH}:/opt/google-cloud-sdk/bin
+
+#installing sonar scanner
+RUN RUN curl -O https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472.zip
+RUN unzip sonar-scanner-cli-4.6.2.2472.zip -d /opt
+
+ENV PATH ${PATH}:/opt/sonar-scanner-4.6.2.2472/bin
+
