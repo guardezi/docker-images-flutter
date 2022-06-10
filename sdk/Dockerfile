@@ -2,6 +2,7 @@ FROM cirrusci/android-sdk:30
 # FROM node:slim
 USER root
 
+COPY debug.keystore /root/.android/debug.keystore
 
 
 ENV FLUTTER_HOME=${HOME}/sdks/flutter \
